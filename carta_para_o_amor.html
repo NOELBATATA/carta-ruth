@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Amor da Minha Vida ❤️</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Tons de rosa e pêssego */
+            display: flex;
+            flex-direction: column; /* Para alinhar o botão acima da carta */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .carta-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 700px;
+            text-align: center;
+            opacity: 0; /* Começa invisível */
+            transform: scale(0.9); /* Começa menor */
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Transição suave */
+            position: relative; /* Para a sombra do coração */
+            margin-top: 20px; /* Espaço entre o botão e a carta */
+        }
+        .carta-container.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .carta-container::before {
+            content: '❤️';
+            font-size: 80px;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+            animation: heartBeat 1.5s infinite alternate; /* Batimento do coração */
+        }
+        h1 {
+            color: #d81b60; /* Rosa escuro */
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        p {
+            color: #4a4a4a;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: left; /* Alinha o texto da carta à esquerda */
+        }
+        p strong {
+            color: #c2185b; /* Um rosa mais forte para nomes */
+        }
+        .data {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            text-align: right;
+        }
+        .open-button {
+            background-color: #e91e63; /* Rosa vibrante */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px; /* Botão arredondado */
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden; /* Para o efeito de brilho */
+        }
+        .open-button:hover {
+            background-color: #d81b60; /* Rosa mais escuro no hover */
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+        .open-button:active {
+            transform: translateY(0);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        .open-button::after { /* Efeito de brilho ao passar o mouse */
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 0;
+            height: 200%;
+            background: rgba(255,255,255,0.1);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+        .open-button:hover::after {
+            width: 120%;
+        }
+
+        /* Animações */
+        @keyframes heartBeat {
+            from { transform: translateX(-50%) scale(1); }
+            to { transform: translateX(-50%) scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <button class="open-button" id="openLetterBtn">Abra a Carta, Meu Amor! 💌</button>
+    <div class="carta-container" id="cartaContainer">
+        <h1>Felizes 2 Anos de Nós! 💖</h1>
+        
+    <p>Minha querida <strong>Ruth</strong>,</p>
+    <p>Hoje, 12 de June, celebramos não apenas o amor que nos une, mas também o privilégio de ter completado <strong>2 ano(s)</strong> ao seu lado. Parece que foi ontem que tudo começou, e cada dia tem sido um presente.</p>
+    <p>Sou grato por todo o seu carinho, sua compreensão e por cada momento de risada e de apoio que compartilhamos. Você me faz uma pessoa melhor e ilumina meus dias.</p>
+    <p>Lembro-me do nosso primeiro encontro, que foi belo e repleto de carinho e amor. Amo como você me faz assistir filmes de romance contra a minha vontade. A primeira vez que te disse que te amava foi estranho por conta da minha timidez, porém você me aceitou com todo o seu amor. Esses momentos construíram a base sólida do nosso amor.</p>
+    <p>Você é a pessoa que ilumina meus dias, me inspira a ser melhor e me completa de uma forma que nunca imaginei ser possível. Adoro seu jeito carinhoso, sua inteligência e seu senso de humor quebrado e ruim.</p>
+
+    <p style="text-align: center; font-style: italic; margin: 30px 0; color: #880e4f;">
+        "No Teu Olhar:"<br>
+        "Teu olhar é um universo a descobrir,<br>
+        Uma viagem sem fim, sempre a me guiar,<br>
+        Com você, o tempo parece parar,<br>
+        E neste amor profundo, quero sempre estar."
+    </p>
+
+    <p>Que venham muitos e muitos anos mais, repletos de amor, cumplicidade, novas aventuras e a certeza de que sempre estarei aqui para você, assim como você está para mim. EU TE AMO HOJE E AMANHÃ AMAREI MAIS AINDA!</p>
+    <p>Com todo o meu amor e admiração,</p>
+    <p>Seu eterno <strong>Emanoel</strong></p>
+
+        <p class="data">Imperatriz, 12 de June de 2025</p>
+    </div>
+
+    <script>
+        document.getElementById('openLetterBtn').addEventListener('click', function() {
+            document.getElementById('cartaContainer').classList.add('show');
+            this.style.display = 'none'; // Esconde o botão depois de clicar
+        });
+    </script>
+</body>
+</html>
